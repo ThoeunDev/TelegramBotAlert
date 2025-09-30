@@ -58,8 +58,8 @@ async def main():
     scheduler.add_job(
         scheduled_daily_message,
         'cron',
-        hour=23,  # 10PM
-        minute=15,
+        hour=9,  # 10PM
+        minute=10,
         args=(app,)
     )
     scheduler.start()
