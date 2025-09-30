@@ -59,7 +59,7 @@ async def main():
         scheduled_daily_message,
         'cron',
         hour=11,  # 10PM
-        minute=12,
+        minute=30,
         args=(app,)
     )
     scheduler.start()
