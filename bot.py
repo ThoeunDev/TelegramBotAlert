@@ -35,8 +35,8 @@ async def main():
     scheduler.add_job(
         scheduled_daily_message,
         'cron',
-        hour=20,
-        minute=59,
+        hour=23,
+        minute=3,
         args=(app,),
         timezone=pytz.timezone('Asia/Phnom_Penh')
     )
