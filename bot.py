@@ -17,11 +17,11 @@ GROUP_CHAT_ID = -4909485308  # Replace with your real group chat ID
 
 # Command: /sales
 async def sales_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await context.bot.send_message(chat_id=GROUP_CHAT_ID, text='លក់បានទេអ្នកទាំងអស់គ្នា')
+    await context.bot.send_message(chat_id=GROUP_CHAT_ID, text='👋 លក់បានទេអ្នកទាំងអស់គ្នា')
 
 # Auto scheduled message
 async def scheduled_daily_message(app):
-    await app.bot.send_message(chat_id=GROUP_CHAT_ID, text='លក់បានទេអ្នកទាំងអស់គ្នា')
+    await app.bot.send_message(chat_id=GROUP_CHAT_ID, text='👋 លក់បានទេអ្នកទាំងអស់គ្នា')
 
 # Main bot setup
 async def main():
@@ -35,8 +35,8 @@ async def main():
     scheduler.add_job(
         scheduled_daily_message,
         'cron',
-        hour=23,
-        minute=3,
+        hour=12,
+        minute=30,
         args=(app,),
         timezone=pytz.timezone('Asia/Phnom_Penh')
     )
