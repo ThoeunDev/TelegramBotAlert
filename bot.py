@@ -13,7 +13,7 @@ import nest_asyncio
 load_dotenv()
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-GROUP_CHAT_ID = -4909485308  # Replace with your real group chat ID
+GROUP_CHAT_ID = -4898266114 # Replace with your real group chat ID
 
 # Command: /sales
 async def sales_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
